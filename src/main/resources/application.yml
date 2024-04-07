@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: simple-push-server
+
+server:
+  port: 8084
+
+com:
+  shitlime:
+    simplepush:
+      sendemail:
+        cmd: cd ~/SMTPush && ./SMTPush.py -t {title} -c {content} -r {receiver}
